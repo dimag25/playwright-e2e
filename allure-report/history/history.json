@@ -1,0 +1,467 @@
+{
+  " e2e_tests\\EATest.Spec.ts ExecuteAutomation EAApp Site Test  ConfigTest @E2E" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 2,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 4
+    },
+    "items" : [ {
+      "uid" : "afd248ad6f9b347d",
+      "reportUrl" : "http://localhost:8080/job/playwright-e2e/5/allure/#testresult/afd248ad6f9b347d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638195488615,
+        "stop" : 1638195512065,
+        "duration" : 23450
+      }
+    }, {
+      "uid" : "ab7ee574218ff336",
+      "reportUrl" : "http://localhost:8080/job/playwright-e2e/4/allure/#testresult/ab7ee574218ff336",
+      "status" : "broken",
+      "time" : {
+        "start" : 1638195276085,
+        "stop" : 1638195306761,
+        "duration" : 30676
+      }
+    }, {
+      "uid" : "7ae037072d9eff43",
+      "reportUrl" : "http://localhost:8080/job/playwright-e2e/2/allure/#testresult/7ae037072d9eff43",
+      "status" : "broken",
+      "time" : {
+        "start" : 1638195058414,
+        "stop" : 1638195089121,
+        "duration" : 30707
+      }
+    }, {
+      "uid" : "20f311ef2367ade3",
+      "reportUrl" : "http://localhost:8080/job/playwright-e2e/1/allure/#testresult/20f311ef2367ade3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638194898289,
+        "stop" : 1638194922000,
+        "duration" : 23711
+      }
+    } ]
+  },
+  " backend_tests\\articles_apis.spec.ts API calls - flows (@API) Create new article in a global feed & validate it created (@API)" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "da113023ea3b2490",
+      "reportUrl" : "http://localhost:8080/job/playwright-e2e/3/allure/#testresult/da113023ea3b2490",
+      "status" : "failed",
+      "statusDetails" : "page.request is not a function",
+      "time" : {
+        "start" : 1638195218784,
+        "stop" : 1638195232056,
+        "duration" : 13272
+      }
+    } ]
+  },
+  " regression_tests\\Regression.suite.spec.ts Suite: @Regression TC001_LoginLogout" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a7118a00c789cad7",
+      "reportUrl" : "http://localhost:8080/job/playwright-e2e/6/allure/#testresult/a7118a00c789cad7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638200660567,
+        "stop" : 1638200674208,
+        "duration" : 13641
+      }
+    } ]
+  },
+  " e2e_tests\\UI_register.spec.ts Register flow UI- (E2E) Should try to register with Valid data @E2E" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 4,
+      "unknown" : 0,
+      "total" : 4
+    },
+    "items" : [ {
+      "uid" : "3ff180e6c45cb3aa",
+      "reportUrl" : "http://localhost:8080/job/playwright-e2e/5/allure/#testresult/3ff180e6c45cb3aa",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638195497288,
+        "stop" : 1638195508452,
+        "duration" : 11164
+      }
+    }, {
+      "uid" : "94b644c7e41a77f8",
+      "reportUrl" : "http://localhost:8080/job/playwright-e2e/4/allure/#testresult/94b644c7e41a77f8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638195285130,
+        "stop" : 1638195305040,
+        "duration" : 19910
+      }
+    }, {
+      "uid" : "4b3b69a99e83816f",
+      "reportUrl" : "http://localhost:8080/job/playwright-e2e/2/allure/#testresult/4b3b69a99e83816f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638195068470,
+        "stop" : 1638195088205,
+        "duration" : 19735
+      }
+    }, {
+      "uid" : "4ae4762c2d0272f0",
+      "reportUrl" : "http://localhost:8080/job/playwright-e2e/1/allure/#testresult/4ae4762c2d0272f0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638194906719,
+        "stop" : 1638194919077,
+        "duration" : 12358
+      }
+    } ]
+  },
+  " regression_tests\\Regression.suite.spec.ts Suite: @Regression TC006_RegisterFemaleUser" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "da2a059220e5cb4a",
+      "reportUrl" : "http://localhost:8080/job/playwright-e2e/6/allure/#testresult/da2a059220e5cb4a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638200712339,
+        "stop" : 1638200735641,
+        "duration" : 23302
+      }
+    } ]
+  },
+  " regression_tests\\Regression.suite.spec.ts Suite: @Regression TC005_RegisterMaleUser" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "4f85008152f829c1",
+      "reportUrl" : "http://localhost:8080/job/playwright-e2e/6/allure/#testresult/4f85008152f829c1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638200689160,
+        "stop" : 1638200712340,
+        "duration" : 23180
+      }
+    } ]
+  },
+  " backend_tests\\tags.spec.ts Mocking  tags api data (@API) should have tags list with routing object @test" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "49c117985f7c692b",
+      "reportUrl" : "http://localhost:8080/job/playwright-e2e/3/allure/#testresult/49c117985f7c692b",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1638195219835,
+        "stop" : 1638195219835,
+        "duration" : 0
+      }
+    } ]
+  },
+  " regression_tests\\Regression.suite.spec.ts Suite: @Regression TC002_SubscribeToNewsLetter" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a153e7bc5c5b3862",
+      "reportUrl" : "http://localhost:8080/job/playwright-e2e/6/allure/#testresult/a153e7bc5c5b3862",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638200674208,
+        "stop" : 1638200679356,
+        "duration" : 5148
+      }
+    } ]
+  },
+  " regression_tests\\Regression.suite.spec.ts Suite: @Regression TC007_UnsubscribeToNewsLetterInvalidEmail" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "cfe4b515a5c99d2f",
+      "reportUrl" : "http://localhost:8080/job/playwright-e2e/6/allure/#testresult/cfe4b515a5c99d2f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638200735645,
+        "stop" : 1638200740738,
+        "duration" : 5093
+      }
+    } ]
+  },
+  " e2e_tests\\UI_Login.spec.ts Login / Logout Flow should try to login with invalid data @E2E" : {
+    "statistic" : {
+      "failed" : 2,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 4
+    },
+    "items" : [ {
+      "uid" : "a788cf5b6a367e4",
+      "reportUrl" : "http://localhost:8080/job/playwright-e2e/5/allure/#testresult/a788cf5b6a367e4",
+      "status" : "failed",
+      "statusDetails" : "expect(received).toBeTruthy()\n\nReceived: false",
+      "time" : {
+        "start" : 1638195489618,
+        "stop" : 1638195503932,
+        "duration" : 14314
+      }
+    }, {
+      "uid" : "c27404ee3c9869e",
+      "reportUrl" : "http://localhost:8080/job/playwright-e2e/4/allure/#testresult/c27404ee3c9869e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638195277472,
+        "stop" : 1638195301023,
+        "duration" : 23551
+      }
+    }, {
+      "uid" : "bf02de434729a127",
+      "reportUrl" : "http://localhost:8080/job/playwright-e2e/2/allure/#testresult/bf02de434729a127",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638195059475,
+        "stop" : 1638195081912,
+        "duration" : 22437
+      }
+    }, {
+      "uid" : "baa540cac1a61261",
+      "reportUrl" : "http://localhost:8080/job/playwright-e2e/1/allure/#testresult/baa540cac1a61261",
+      "status" : "failed",
+      "statusDetails" : "expect(received).toBeTruthy()\n\nReceived: false",
+      "time" : {
+        "start" : 1638194899959,
+        "stop" : 1638194915218,
+        "duration" : 15259
+      }
+    } ]
+  },
+  " regression_tests\\Regression.suite.spec.ts Suite: @Regression TC004_ValidateEmailID" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6e52e74c6d4f741a",
+      "reportUrl" : "http://localhost:8080/job/playwright-e2e/6/allure/#testresult/6e52e74c6d4f741a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638200684062,
+        "stop" : 1638200689160,
+        "duration" : 5098
+      }
+    } ]
+  },
+  " e2e_tests\\UI_Login.spec.ts Login / Logout Flow should login & logout  application @E2E" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 4,
+      "unknown" : 0,
+      "total" : 4
+    },
+    "items" : [ {
+      "uid" : "892cc0106abf1dc",
+      "reportUrl" : "http://localhost:8080/job/playwright-e2e/5/allure/#testresult/892cc0106abf1dc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638195517766,
+        "stop" : 1638195529924,
+        "duration" : 12158
+      }
+    }, {
+      "uid" : "232382d115fd6884",
+      "reportUrl" : "http://localhost:8080/job/playwright-e2e/4/allure/#testresult/232382d115fd6884",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638195301023,
+        "stop" : 1638195325040,
+        "duration" : 24017
+      }
+    }, {
+      "uid" : "c73b75873d0e103b",
+      "reportUrl" : "http://localhost:8080/job/playwright-e2e/2/allure/#testresult/c73b75873d0e103b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638195081912,
+        "stop" : 1638195104858,
+        "duration" : 22946
+      }
+    }, {
+      "uid" : "384e7d430837b290",
+      "reportUrl" : "http://localhost:8080/job/playwright-e2e/1/allure/#testresult/384e7d430837b290",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638194927931,
+        "stop" : 1638194940469,
+        "duration" : 12538
+      }
+    } ]
+  },
+  " e2e_tests\\GoogleTest.Spec.ts Google WebSite Test @E2E Google Search test" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 2,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 4
+    },
+    "items" : [ {
+      "uid" : "32fd8fefbac17e01",
+      "reportUrl" : "http://localhost:8080/job/playwright-e2e/5/allure/#testresult/32fd8fefbac17e01",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638195493055,
+        "stop" : 1638195513129,
+        "duration" : 20074
+      }
+    }, {
+      "uid" : "497eafecb05bee1a",
+      "reportUrl" : "http://localhost:8080/job/playwright-e2e/4/allure/#testresult/497eafecb05bee1a",
+      "status" : "broken",
+      "time" : {
+        "start" : 1638195280939,
+        "stop" : 1638195313901,
+        "duration" : 32962
+      }
+    }, {
+      "uid" : "e4bebe40d9a14719",
+      "reportUrl" : "http://localhost:8080/job/playwright-e2e/2/allure/#testresult/e4bebe40d9a14719",
+      "status" : "broken",
+      "time" : {
+        "start" : 1638195063631,
+        "stop" : 1638195096530,
+        "duration" : 32899
+      }
+    }, {
+      "uid" : "fff4e0e05058571e",
+      "reportUrl" : "http://localhost:8080/job/playwright-e2e/1/allure/#testresult/fff4e0e05058571e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638194903755,
+        "stop" : 1638194925169,
+        "duration" : 21414
+      }
+    } ]
+  },
+  " e2e_tests\\EATest.Spec.ts ExecuteAutomation EAApp Site Test  Login click test @E2E" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 4,
+      "unknown" : 0,
+      "total" : 4
+    },
+    "items" : [ {
+      "uid" : "2d0fafbe2add452e",
+      "reportUrl" : "http://localhost:8080/job/playwright-e2e/5/allure/#testresult/2d0fafbe2add452e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638195512065,
+        "stop" : 1638195517752,
+        "duration" : 5687
+      }
+    }, {
+      "uid" : "584eca4c6235de98",
+      "reportUrl" : "http://localhost:8080/job/playwright-e2e/4/allure/#testresult/584eca4c6235de98",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638195325047,
+        "stop" : 1638195334777,
+        "duration" : 9730
+      }
+    }, {
+      "uid" : "555b4aff9aeed0b3",
+      "reportUrl" : "http://localhost:8080/job/playwright-e2e/2/allure/#testresult/555b4aff9aeed0b3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638195104864,
+        "stop" : 1638195114038,
+        "duration" : 9174
+      }
+    }, {
+      "uid" : "49008ccbf8bd5cd3",
+      "reportUrl" : "http://localhost:8080/job/playwright-e2e/1/allure/#testresult/49008ccbf8bd5cd3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638194922000,
+        "stop" : 1638194927918,
+        "duration" : 5918
+      }
+    } ]
+  },
+  " regression_tests\\Regression.suite.spec.ts Suite: @Regression TC003_UnsubscribeToNewsLetter" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b0aa20b9363e855a",
+      "reportUrl" : "http://localhost:8080/job/playwright-e2e/6/allure/#testresult/b0aa20b9363e855a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638200679356,
+        "stop" : 1638200684061,
+        "duration" : 4705
+      }
+    } ]
+  }
+}

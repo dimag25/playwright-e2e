@@ -1,0 +1,150 @@
+[
+  {
+    "TC": "TC001_LoginLogout",
+    "ClassName": "HomeActions",
+    "actions": [
+      {
+        "Step": "Login",
+        "Action": "login",
+        "Data": ["test321@yahoo.com", "test321"]
+      },
+      {
+        "Step": "Logout",
+        "Action": "logout",
+        "Data": []
+      }
+    ]
+  },
+  {
+    "TC": "TC002_SubscribeToNewsLetter",
+    "ClassName": "HomeActions",
+    "actions": [
+      {
+        "Step": "Subscribe to Newsletter",
+        "Action": "subscribeToNewsLetter",
+        "Data": [
+          "test321@yahoo.com",
+          "Thank you for signing up! A verification email has been sent. We appreciate your interest."
+        ]
+      }
+    ]
+  },
+  {
+    "TC": "TC003_UnsubscribeToNewsLetter",
+    "ClassName": "HomeActions",
+    "actions": [
+      {
+        "Step": "Unsubscribe to Newsletter",
+        "Action": "unsubscribeToNewsLetter",
+        "Data": [
+          "test321@yahoo.com",
+          "A verification email has been sent. Thank you!"
+        ]
+      }
+    ]
+  },
+  {
+    "TC": "TC004_ValidateEmailID",
+    "ClassName": "HomeActions",
+    "actions": [
+      {
+        "Step": "Validate email ID entered for Newsletter subscription",
+        "Action": "subscribeToNewsLetter",
+        "Data": ["test321@yahoocom", "Enter valid email"]
+      }
+    ]
+  },
+  {
+    "TC": "TC005_RegisterMaleUser",
+    "ClassName": "RegisterActions",
+    "actions": [
+      {
+        "Step": "Register a new user John Doe",
+        "Action": "registerUser",
+        "Data": [
+          "Male",
+          "John",
+          "Doe",
+          "10/10/1980",
+          "john_%s@test.com",
+          "John_%s",
+          "test321",
+          "test321",
+          "Unknown",
+          "Your registration completed"
+        ]
+      },
+      {
+        "Step": "Logout",
+        "Action": "logout",
+        "Data": []
+      }
+    ]
+  },
+  {
+    "TC": "TC006_RegisterFemaleUser",
+    "ClassName": "RegisterActions",
+    "actions": [
+      {
+        "Step": "Register a new user Jane Doe",
+        "Action": "registerUser",
+        "Data": [
+          "Female",
+          "Jane",
+          "Doe",
+          "1/6/1980",
+          "jane_%s@test.com",
+          "Jane_%s",
+          "test3210",
+          "test3210",
+          "Known",
+          "Your registration completed"
+        ]
+      },
+      {
+        "Step": "Logout",
+        "Action": "logout",
+        "Data": []
+      }
+    ]
+  },
+  {
+    "TC": "TC007_UnsubscribeToNewsLetterInvalidEmail",
+    "ClassName": "HomeActions",
+    "actions": [
+      {
+        "Step": "Unsubscribe to NewsLetter with invalid email ID",
+        "Action": "unsubscribeToNewsLetter",
+        "Data": [
+          "test321@yahoocom",
+          "Enter valid email"
+        ]
+      }
+    ]
+  },
+
+  {
+    "TC": "TC008_LoginToIdit",
+    "ClassName": "IditActions",
+    "actions": [
+      {
+        "Step": "Login to idit application HXEU project",
+        "Action": "loginToIDIT",
+        "Data": ["Administrator", "1111"]
+      }
+    ]
+  },
+  {
+    "TC": "TC009_NewContactIdit",
+    "ClassName": "IditActions",
+    "actions": [
+      {
+        "Step": "Create new contact IDIT",
+        "Action": "createNewContact",
+        "Data": [
+          
+        ]
+      }
+    ]
+  }
+]

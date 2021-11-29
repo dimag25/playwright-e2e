@@ -1,0 +1,10 @@
+[ {
+  "name" : "Jenkins",
+  "type" : "jenkins",
+  "url" : "http://localhost:8080/",
+  "buildOrder" : 6,
+  "buildName" : "Auto_Typescript Playwright FW-poc #6",
+  "buildUrl" : "http://localhost:8080/job/playwright-e2e/6/",
+  "reportName" : "AllureReport",
+  "reportUrl" : "http://localhost:8080/job/playwright-e2e/6/allure"
+} ]

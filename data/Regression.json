@@ -1,0 +1,30 @@
+[
+    {
+        "TC": "TC001_LoginLogout",
+        "RunMode": "Yes"
+    },
+    {
+        "TC": "TC002_SubscribeToNewsLetter",
+        "RunMode": "Yes"
+    },
+    {
+        "TC": "TC003_UnsubscribeToNewsLetter",
+        "RunMode": "Yes"
+    },
+    {
+        "TC": "TC004_ValidateEmailID",
+        "RunMode": "Yes"
+    },
+    {
+        "TC": "TC005_RegisterMaleUser",
+        "RunMode": "Yes"
+    },
+    {
+        "TC": "TC006_RegisterFemaleUser",
+        "RunMode": "Yes"
+    },
+    {
+        "TC": "TC007_UnsubscribeToNewsLetterInvalidEmail",
+        "RunMode": "Yes"
+    }   
+]

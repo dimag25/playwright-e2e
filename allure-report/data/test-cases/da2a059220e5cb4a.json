@@ -1,0 +1,600 @@
+{
+  "uid" : "da2a059220e5cb4a",
+  "name" : "TC006_RegisterFemaleUser",
+  "fullName" : "TC006_RegisterFemaleUser",
+  "historyId" : " regression_tests\\Regression.suite.spec.ts Suite: @Regression TC006_RegisterFemaleUser",
+  "time" : {
+    "start" : 1638200712339,
+    "stop" : 1638200735641,
+    "duration" : 23302
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Before Hooks",
+      "time" : {
+        "start" : 1638200712340,
+        "stop" : 1638200712751,
+        "duration" : 411
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "browserContext.newPage",
+        "time" : {
+          "start" : 1638200712351,
+          "stop" : 1638200712751,
+          "duration" : 400
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "page.goto(/samples/TestComplete15/smartstore/)",
+      "time" : {
+        "start" : 1638200712751,
+        "stop" : 1638200716077,
+        "duration" : 3326
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Register a new user Jane Doe",
+      "time" : {
+        "start" : 1638200716078,
+        "stop" : 1638200732233,
+        "duration" : 16155
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "page.click(#menubar-my-account span:has-text(\"Log in\"))",
+        "time" : {
+          "start" : 1638200716079,
+          "stop" : 1638200717199,
+          "duration" : 1120
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "page.click(.register-button)",
+        "time" : {
+          "start" : 1638200717201,
+          "stop" : 1638200718331,
+          "duration" : 1130
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "page.click(#gender-female)",
+        "time" : {
+          "start" : 1638200718332,
+          "stop" : 1638200719437,
+          "duration" : 1105
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "page.fill(#FirstName)",
+        "time" : {
+          "start" : 1638200719437,
+          "stop" : 1638200720486,
+          "duration" : 1049
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "page.fill(#LastName)",
+        "time" : {
+          "start" : 1638200720487,
+          "stop" : 1638200721532,
+          "duration" : 1045
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "page.selectOption([name=DateOfBirthDay])",
+        "time" : {
+          "start" : 1638200721532,
+          "stop" : 1638200722595,
+          "duration" : 1063
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "page.selectOption([name=DateOfBirthMonth])",
+        "time" : {
+          "start" : 1638200722596,
+          "stop" : 1638200723645,
+          "duration" : 1049
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "page.selectOption([name=DateOfBirthYear])",
+        "time" : {
+          "start" : 1638200723647,
+          "stop" : 1638200724690,
+          "duration" : 1043
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "page.fill(#Email)",
+        "time" : {
+          "start" : 1638200724691,
+          "stop" : 1638200725738,
+          "duration" : 1047
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "page.fill(#Username)",
+        "time" : {
+          "start" : 1638200725739,
+          "stop" : 1638200726780,
+          "duration" : 1041
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "page.fill([name=Password])",
+        "time" : {
+          "start" : 1638200726781,
+          "stop" : 1638200727817,
+          "duration" : 1036
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "page.fill(#ConfirmPassword)",
+        "time" : {
+          "start" : 1638200727818,
+          "stop" : 1638200728855,
+          "duration" : 1037
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "page.fill(#Company)",
+        "time" : {
+          "start" : 1638200728855,
+          "stop" : 1638200729896,
+          "duration" : 1041
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "page.check(#Newsletter)",
+        "time" : {
+          "start" : 1638200729898,
+          "stop" : 1638200731003,
+          "duration" : 1105
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "page.click([name=register-button])",
+        "time" : {
+          "start" : 1638200731005,
+          "stop" : 1638200732130,
+          "duration" : 1125
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "page.waitForSelector(.registration-result-page p)",
+        "time" : {
+          "start" : 1638200732131,
+          "stop" : 1638200732160,
+          "duration" : 29
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "elementHandle.textContent",
+        "time" : {
+          "start" : 1638200732160,
+          "stop" : 1638200732178,
+          "duration" : 18
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "expect.toBe",
+        "time" : {
+          "start" : 1638200732181,
+          "stop" : 1638200732181,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "page.textContent(#menubar-my-account .menubar-link>span)",
+        "time" : {
+          "start" : 1638200732183,
+          "stop" : 1638200732207,
+          "duration" : 24
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "page.waitForSelector(#menubar-my-account .menubar-link>span)",
+        "time" : {
+          "start" : 1638200732208,
+          "stop" : 1638200732222,
+          "duration" : 14
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "elementHandle.isVisible",
+        "time" : {
+          "start" : 1638200732222,
+          "stop" : 1638200732231,
+          "duration" : 9
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "expect.toBeTruthy",
+        "time" : {
+          "start" : 1638200732232,
+          "stop" : 1638200732233,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 22,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Logout",
+      "time" : {
+        "start" : 1638200732233,
+        "stop" : 1638200734704,
+        "duration" : 2471
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "page.click(#menubar-my-account .menubar-link>span)",
+        "time" : {
+          "start" : 1638200732233,
+          "stop" : 1638200733286,
+          "duration" : 1053
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "page.click(#menubar-my-account span:has-text(\"Log out\"))",
+        "time" : {
+          "start" : 1638200733287,
+          "stop" : 1638200734540,
+          "duration" : 1253
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "page.waitForSelector(#menubar-my-account span:has-text(\"Log in\"))",
+        "time" : {
+          "start" : 1638200734541,
+          "stop" : 1638200734652,
+          "duration" : 111
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "elementHandle.isVisible",
+        "time" : {
+          "start" : 1638200734654,
+          "stop" : 1638200734702,
+          "duration" : 48
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "expect.toBeTruthy",
+        "time" : {
+          "start" : 1638200734703,
+          "stop" : 1638200734704,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 5,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "After Hooks",
+      "time" : {
+        "start" : 1638200734704,
+        "stop" : 1638200735644,
+        "duration" : 940
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "browserContext.close",
+        "time" : {
+          "start" : 1638200735475,
+          "stop" : 1638200735642,
+          "duration" : 167
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "d898148dcc516399",
+      "name" : "stdout",
+      "source" : "d898148dcc516399.txt",
+      "type" : "text/plain",
+      "size" : 51
+    }, {
+      "uid" : "cf0f0d30e3738065",
+      "name" : "stdout",
+      "source" : "cf0f0d30e3738065.txt",
+      "type" : "text/plain",
+      "size" : 50
+    }, {
+      "uid" : "c12d229c0b0396d1",
+      "name" : "stdout",
+      "source" : "c12d229c0b0396d1.txt",
+      "type" : "text/plain",
+      "size" : 34
+    }, {
+      "uid" : "ab8fa6efc93c39b8",
+      "name" : "stdout",
+      "source" : "ab8fa6efc93c39b8.txt",
+      "type" : "text/plain",
+      "size" : 31
+    }, {
+      "uid" : "24e31202b321747a",
+      "name" : "stdout",
+      "source" : "24e31202b321747a.txt",
+      "type" : "text/plain",
+      "size" : 45
+    }, {
+      "uid" : "e5ede3f9043d77d7",
+      "name" : "stdout",
+      "source" : "e5ede3f9043d77d7.txt",
+      "type" : "text/plain",
+      "size" : 15
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 34,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 6
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "suite",
+    "value" : "regression_tests\\Regression.suite.spec.ts"
+  }, {
+    "name" : "subSuite",
+    "value" : "Suite: @Regression"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "da2a059220e5cb4a.json",
+  "parameterValues" : [ ]
+}

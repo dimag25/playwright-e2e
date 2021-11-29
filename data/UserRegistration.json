@@ -1,0 +1,14 @@
+[
+    {
+        "TC": "TC001_LoginLogout",
+        "RunMode": "No"
+    },
+    {
+        "TC": "TC005_RegisterMaleUser",
+        "RunMode": "Yes"
+    },
+    {
+        "TC": "TC006_RegisterFemaleUser",
+        "RunMode": "Yes"
+    }   
+]

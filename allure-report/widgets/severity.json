@@ -1,0 +1,71 @@
+[ {
+  "uid" : "cfe4b515a5c99d2f",
+  "name" : "TC007_UnsubscribeToNewsLetterInvalidEmail",
+  "time" : {
+    "start" : 1638200735645,
+    "stop" : 1638200740738,
+    "duration" : 5093
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6e52e74c6d4f741a",
+  "name" : "TC004_ValidateEmailID",
+  "time" : {
+    "start" : 1638200684062,
+    "stop" : 1638200689160,
+    "duration" : 5098
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a7118a00c789cad7",
+  "name" : "TC001_LoginLogout",
+  "time" : {
+    "start" : 1638200660567,
+    "stop" : 1638200674208,
+    "duration" : 13641
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b0aa20b9363e855a",
+  "name" : "TC003_UnsubscribeToNewsLetter",
+  "time" : {
+    "start" : 1638200679356,
+    "stop" : 1638200684061,
+    "duration" : 4705
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "da2a059220e5cb4a",
+  "name" : "TC006_RegisterFemaleUser",
+  "time" : {
+    "start" : 1638200712339,
+    "stop" : 1638200735641,
+    "duration" : 23302
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4f85008152f829c1",
+  "name" : "TC005_RegisterMaleUser",
+  "time" : {
+    "start" : 1638200689160,
+    "stop" : 1638200712340,
+    "duration" : 23180
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a153e7bc5c5b3862",
+  "name" : "TC002_SubscribeToNewsLetter",
+  "time" : {
+    "start" : 1638200674208,
+    "stop" : 1638200679356,
+    "duration" : 5148
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

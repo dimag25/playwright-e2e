@@ -1,0 +1,18 @@
+[
+    {
+        "TC": "TC002_SubscribeToNewsLetter",
+        "RunMode": "No"
+    },
+    {
+        "TC": "TC003_UnsubscribeToNewsLetter",
+        "RunMode": "No"
+    },
+    {
+        "TC": "TC004_ValidateEmailID",
+        "RunMode": "No"
+    },
+    {
+        "TC": "TC007_UnsubscribeToNewsLetterInvalidEmail",
+        "RunMode": "Yes"
+    }   
+]

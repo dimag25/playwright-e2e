@@ -1,0 +1,8 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Mon Nov 29 17:44:20 IST 2021","Mon Nov 29 17:44:34 IST 2021","13641","","regression_tests\Regression.suite.spec.ts","Suite: @Regression","","","TC001_LoginLogout",""
+"passed","Mon Nov 29 17:44:39 IST 2021","Mon Nov 29 17:44:44 IST 2021","4705","","regression_tests\Regression.suite.spec.ts","Suite: @Regression","","","TC003_UnsubscribeToNewsLetter",""
+"passed","Mon Nov 29 17:44:49 IST 2021","Mon Nov 29 17:45:12 IST 2021","23180","","regression_tests\Regression.suite.spec.ts","Suite: @Regression","","","TC005_RegisterMaleUser",""
+"passed","Mon Nov 29 17:44:44 IST 2021","Mon Nov 29 17:44:49 IST 2021","5098","","regression_tests\Regression.suite.spec.ts","Suite: @Regression","","","TC004_ValidateEmailID",""
+"passed","Mon Nov 29 17:45:35 IST 2021","Mon Nov 29 17:45:40 IST 2021","5093","","regression_tests\Regression.suite.spec.ts","Suite: @Regression","","","TC007_UnsubscribeToNewsLetterInvalidEmail",""
+"passed","Mon Nov 29 17:44:34 IST 2021","Mon Nov 29 17:44:39 IST 2021","5148","","regression_tests\Regression.suite.spec.ts","Suite: @Regression","","","TC002_SubscribeToNewsLetter",""
+"passed","Mon Nov 29 17:45:12 IST 2021","Mon Nov 29 17:45:35 IST 2021","23302","","regression_tests\Regression.suite.spec.ts","Suite: @Regression","","","TC006_RegisterFemaleUser",""

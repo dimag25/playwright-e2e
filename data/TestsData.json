@@ -1,0 +1,15 @@
+{
+  "LoginData": {"username":"test321@yahoo.com", "password":"test321"},
+  "RegistertData": [
+    "Male",
+    "John",
+    "Doe",
+    "10/10/1980",
+    "mail_%s@test.com",
+    "John_%s",
+    "test321",
+    "test321",
+    "Unknown"
+  ],
+  "InvalidEmail": "test321@yahoocom"
+}
