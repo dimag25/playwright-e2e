@@ -2,9 +2,8 @@ import { PlaywrightTestConfig } from '@playwright/test';
 const config: PlaywrightTestConfig = {
 globalTeardown:require.resolve('./global-teardown'),
 use: {
-// baseURL: "https://angular.realworld.io",
-baseURL: "https://services.smartbear.com//samples/TestComplete15/smartstore/",
-headless: false,
+baseURL: "https://www.saucedemo.com/",
+headless: true,
 channel: "chrome",
 launchOptions: {
 args: ["--start-maximized"],
@@ -16,8 +15,8 @@ viewport: null, //{ width: 1360, height: 760 },
 ignoreHTTPSErrors: true,
 actionTimeout: 30000,
 navigationTimeout: 50000,
-screenshot: 'only-on-failure',
-video: 'retain-on-failure',
+screenshot: 'on',
+video: 'on',
 trace: 'retain-on-failure'
 },
 testDir: './src/tests',
