@@ -1,5 +1,5 @@
 {
-  "name": "playwright-test-runner",
+  "name": "playwright-e2e",
   "version": "1.0.0",
   "description": "Playwright framework with TestRunner",
   "main": "index.js",
@@ -17,7 +17,7 @@
     "@playwright/test": "^1.41.2",
     "allure-commandline": "^2.13.8",
     "allure-playwright": "^2.0.0-beta.13",
-    "eslint": "^8.1.0",
+    "eslint": "^7.2.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.18.2",
     "exceljs": "^4.3.0",
@@ -33,5 +33,13 @@
     "fs": "^0.0.1-security",
     "fs-extra": "^10.0.0",
     "nvm": "^0.0.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dimag25/playwright-e2e.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dimag25/playwright-e2e/issues"
+  },
+  "homepage": "https://github.com/dimag25/playwright-e2e#readme"
 }

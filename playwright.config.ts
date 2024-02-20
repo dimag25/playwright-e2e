@@ -20,7 +20,7 @@ video: 'on',
 trace: 'retain-on-failure'
 },
 testDir: './src/tests',
-outputDir: '../../allure-results/results',
+outputDir: './allure-results/results',
 testMatch: '**/*.spec.ts',
 // grep:[new RegExp("@API")],
 // grep:[new RegExp("@E2E")],
