@@ -1,7 +1,4 @@
-import { Page } from "playwright-core";
-
-import { expect } from "@playwright/test";
-import loginData from "../../data/Login.json";
+import { expect, Page } from "@playwright/test";
 import BasePage from "./BasePage";
 
 export default class LoginPage extends BasePage {
@@ -9,10 +6,11 @@ export default class LoginPage extends BasePage {
     super(page);
   }
 
-  //All the UI elements of the Page
-  emailTextBox = async () => this.Page.$('[placeholder="Email"]');
-  passwordTextBox = async () => this.Page.$('[placeholder="Password"]');
-  submitButton = async () => this.Page.$('[type="submit"]');
+  //All the UI elements of the Page.
+  userNameTextBox = async () => this.Page.$("[data-test='username']");
+  passwordTextBox = async () => this.Page.$("[data-test='password']");
+  submitButton = async () => this.Page.$("[data-test='login-button']");
+  error_message = async () => this.Page.$("[data-test='error']");
 
   /**
     * static loginFlow
@@ -20,13 +18,13 @@ export default class LoginPage extends BasePage {
     @param password: string 
     */
     public async loginFlow(userName: string, password: string) {
-    await (await this.emailTextBox()).fill(userName);
+    await (await this.userNameTextBox()).fill(userName);
     await (await this.passwordTextBox()).fill(password);
     await (await this.submitButton()).click();
   }
 
   public async clearLoginTextBoxes() {
-    await (await this.emailTextBox()).fill("");
+    await (await this.userNameTextBox()).fill("");
     await (await this.passwordTextBox()).fill("");
   }
 
@@ -34,27 +32,21 @@ export default class LoginPage extends BasePage {
    * verify login success flow.
    */
    public async verifyLoginSuccess() {
-    const userNameXpath =
-      "body > app-root > app-layout-header > nav > div > ul > li:nth-child(4) > a";
-    const userLoggedIn = await this.Page.innerText(userNameXpath);
-    await expect(userLoggedIn).toBe("dimag@test.com");
+    const isVisibleUserMenu = await this.Page.isVisible(".bm-burger-button");
+    expect(isVisibleUserMenu).toBeTruthy();
   }
 
   public async verifyErrorMessage(message) {
-    const isVisibleError = await this.Page.isVisible(".error-messages");
+    const isVisibleError = await this.Page.isVisible("[data-test='error']");
     expect(isVisibleError).toBeTruthy();
-    const errorcontent = await this.Page.innerText(".error-messages");
-    expect(errorcontent).toBe(message);
+    const errorcontent = await this.Page.innerText("[data-test='error']");
+    expect(errorcontent).toContain(message);
   }
 
   public async logoutFlow() {
-    const userNameXpath =
-      "body > app-root > app-layout-header > nav > div > ul > li:nth-child(4) > a";
-    await this.Page.click(userNameXpath);
-    await this.Page.click('text="Edit Profile Settings"');
-    await this.Page.click('text="Or click here to logout."');
-    expect(await this.Page.isVisible("text=Sign in")).toBeTruthy();
+    const menu_button =".bm-burger-button";
+    await this.Page.click(menu_button);
+    await this.Page.click('text="Logout"');
+    expect(await this.Page.isVisible("text=Login")).toBeTruthy();
   }
 }
-
-// export { LoginPage };
