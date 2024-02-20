@@ -1,11 +1,45 @@
-#####playwright-e2e####
-# playwright-e2e
-========= My Playwright Project :========
-Author: Dima Gurevich 29/11/2021 ,  E2E UI testings , Allure reporting fully integrated , package.json scripts ready for CI .
+#####Playwright-E2E####
+# Playwright-E2E
+========= My Playwright Project========
 
-For Jenkins With parameters:
+```
+Author: Dima Gurevich   E2E UI testings , 
+Allure reporting fully integrated , 
+package.json scripts ready for CI .
+```
+### Project Setup:
+- npx playwright install   
+- npm install
 
-npx playwright test --grep "%Tag%" --browser "%browser%" --workers=%NumberOfThreads%
+# Local Run:
 
-i.e:
-npx playwright test --grep "@API" --browser "chromium" --workers=2
+```
+npm run test
+```
+
+### View results Via Allure reporter
+
+- Install Allure Commandline To View Test results
+
+### For Windows:
+
+Follow the instructions [here](https://scoop.sh/) to install Scoop.<br>
+Run the following command to install Allure using Scoop:
+
+```bash
+scoop install allure
+```
+
+### For Mac:
+
+```bash
+brew install allure
+```
+
+### View Results Locally:
+
+```bash
+allure serve allure-results
+```
+
+Enjoy! :)
