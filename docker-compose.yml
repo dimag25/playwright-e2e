@@ -1,0 +1,21 @@
+# Run either suite in a clean, reproducible container:
+#   docker compose run --rm typescript
+#   docker compose run --rm python
+services:
+  typescript:
+    build:
+      context: ./typescript
+    environment:
+      - CI=true
+      - BASE_URL=${BASE_URL:-https://www.saucedemo.com}
+    volumes:
+      - ./typescript/playwright-report:/app/playwright-report
+      - ./typescript/test-results:/app/test-results
+
+  python:
+    build:
+      context: ./python
+    environment:
+      - CI=true
+    volumes:
+      - ./python/test-results:/app/test-results

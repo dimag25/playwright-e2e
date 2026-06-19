@@ -1,5 +1,35 @@
+# Dependencies
 node_modules/
-allure-results
-logs
-allure-report
-package-lock.json
+**/node_modules/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+
+# Playwright (TypeScript)
+playwright-report/
+blob-report/
+all-blob-reports/
+test-results/
+playwright/.cache/
+playwright/.auth/
+traces/
+
+# Logs & OS
+logs/
+*.log
+.DS_Store
+
+# Env & secrets
+.env
+.env.local
+*.local
+
+# Editor
+.idea/
+.vscode/*
+!.vscode/extensions.json
