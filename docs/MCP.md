@@ -74,3 +74,21 @@ claude
 > Tip: The agent driving the Playwright MCP and the deterministic tests in
 > `typescript/` and `python/` are complementary — let the agent _explore and
 > draft_, then commit the hardened, reviewed spec into the suite.
+
+## Agent Skills (playbooks)
+
+The MCP gives an agent the *browser*; the **Agent Skills** in
+[`../.claude/skills/`](../.claude/skills/) give it the *method*. Each `SKILL.md`
+is auto-discovered by Claude Code and triggered by its `description`:
+
+| Skill | Triggers on |
+| --- | --- |
+| `playwright-explore` | "explore / walk through / investigate the UI" |
+| `playwright-generate-test` | "write / scaffold a test for this flow" |
+| `playwright-a11y-audit` | "audit accessibility / run axe / check WCAG" |
+| `playwright-debug-failure` | "debug / why is this test flaky / reproduce" |
+| `playwright-visual-baseline` | "update snapshots / review a visual diff" |
+
+A typical loop: **explore → generate-test → debug-failure → visual-baseline**.
+The skill set and `.mcp.json` are validated in CI by the `Validate` workflow
+(`.github/scripts/validate-skills.mjs`).

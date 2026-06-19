@@ -8,6 +8,7 @@ via the Model Context Protocol (MCP)**.
 The suite tests the public [Sauce Demo](https://www.saucedemo.com) app and a
 public sandbox API, so you can clone and run it immediately.
 
+[![Validate](https://github.com/dimag25/playwright-e2e/actions/workflows/validate.yml/badge.svg)](https://github.com/dimag25/playwright-e2e/actions/workflows/validate.yml)
 [![Playwright (TypeScript)](https://github.com/dimag25/playwright-e2e/actions/workflows/playwright-typescript.yml/badge.svg)](https://github.com/dimag25/playwright-e2e/actions/workflows/playwright-typescript.yml)
 [![Playwright (Python)](https://github.com/dimag25/playwright-e2e/actions/workflows/playwright-python.yml/badge.svg)](https://github.com/dimag25/playwright-e2e/actions/workflows/playwright-python.yml)
 
@@ -28,7 +29,9 @@ public sandbox API, so you can clone and run it immediately.
 | **Reporting** | HTML report, blob reports merged across shards, GitHub annotations |
 | **CI** | Sharded GitHub Actions, lint + typecheck gates, browser caching |
 | **Containers** | Pinned Playwright Docker images + `docker compose` |
+| **CI checks** | A fast browser-free `Validate` gate (typecheck/lint/format, spec-compile, config & skills) + full sharded suites |
 | **AI / MCP** | Playwright, Filesystem & GitHub MCP servers ([docs](docs/MCP.md)) |
+| **Agent Skills** | Reusable Playwright-MCP playbooks in [`.claude/skills/`](.claude/skills/) |
 
 ## 📁 Repository layout
 
@@ -52,7 +55,11 @@ public sandbox API, so you can clone and run it immediately.
 │   ├── tests/             # test_login / test_cart / test_api / a11y
 │   ├── conftest.py        # Fixtures (page objects, logged_in helper)
 │   └── pyproject.toml
-├── .github/workflows/     # CI for both stacks
+├── .github/
+│   ├── workflows/         # validate.yml + sharded TS & Python suites
+│   ├── scripts/           # CI helpers (skill/MCP validation)
+│   └── dependabot.yml     # weekly dependency update PRs
+├── .claude/skills/        # Agent Skills: Playwright-MCP playbooks
 ├── .mcp.json              # MCP servers for AI agents
 └── docs/                  # MCP & best-practices guides
 ```
@@ -101,7 +108,22 @@ claude            # from repo root; reads .mcp.json automatically
 # then: "Use the playwright MCP to log into saucedemo and add a backpack to the cart."
 ```
 
-See [docs/MCP.md](docs/MCP.md) for details and more server ideas.
+### Agent Skills
+
+Reusable **playbooks** in [`.claude/skills/`](.claude/skills/) teach agents how to
+use the Playwright MCP for real tasks — Claude Code auto-discovers them and
+invokes the right one from your request (or call `/<skill-name>` directly):
+
+| Skill | Use it to… |
+| --- | --- |
+| `playwright-explore` | Walk a live flow via accessibility snapshots |
+| `playwright-generate-test` | Turn an explored flow into a hardened POM spec |
+| `playwright-a11y-audit` | Run an axe-core WCAG audit on a live page |
+| `playwright-debug-failure` | Reproduce & diagnose a failing/flaky test |
+| `playwright-visual-baseline` | Preview, author & update visual / ARIA snapshots |
+
+See [docs/MCP.md](docs/MCP.md) for server details and [.claude/skills/](.claude/skills/README.md)
+for the full playbooks.
 
 ## 🐳 Docker
 
