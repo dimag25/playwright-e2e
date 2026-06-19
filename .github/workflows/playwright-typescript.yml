@@ -1,0 +1,87 @@
+name: Playwright (TypeScript)
+
+on:
+  push:
+    branches: [master, main]
+    paths: ['typescript/**', '.github/workflows/playwright-typescript.yml']
+  pull_request:
+    paths: ['typescript/**', '.github/workflows/playwright-typescript.yml']
+  workflow_dispatch:
+
+defaults:
+  run:
+    working-directory: typescript
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: typescript/package-lock.json
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm run lint
+      - run: npm run format:check
+
+  test:
+    name: 'test (shard ${{ matrix.shard }}/4)'
+    needs: lint
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [1, 2, 3, 4]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: typescript/package-lock.json
+      - run: npm ci
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps
+      - name: Run Playwright tests
+        # Visual screenshot baselines are environment-specific; generate &
+        # commit them locally with `npm test -- --update-snapshots`, then drop
+        # this filter to gate on them in CI.
+        run: npx playwright test --shard=${{ matrix.shard }}/4 --grep-invert @visual
+      - name: Upload blob report
+        if: ${{ !cancelled() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: blob-report-${{ matrix.shard }}
+          path: typescript/blob-report
+          retention-days: 7
+
+  merge-reports:
+    name: Merge reports
+    if: ${{ !cancelled() }}
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: typescript/package-lock.json
+      - run: npm ci
+      - name: Download blob reports
+        uses: actions/download-artifact@v4
+        with:
+          path: typescript/all-blob-reports
+          pattern: blob-report-*
+          merge-multiple: true
+      - name: Merge into a single HTML report
+        run: npx playwright merge-reports --reporter=html ./all-blob-reports
+      - name: Upload HTML report
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-html-report
+          path: typescript/playwright-report
+          retention-days: 14

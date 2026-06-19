@@ -1,0 +1,33 @@
+[project]
+name = "playwright-e2e-python"
+version = "2.0.0"
+description = "Modern Playwright Python E2E framework — Page Object Model, fixtures, API & accessibility testing."
+requires-python = ">=3.10"
+dependencies = [
+    "playwright>=1.61.0",
+    "pytest>=8.4.0",
+    "pytest-playwright>=0.8.0",
+    "pytest-xdist>=3.8.0",
+    "pytest-base-url>=2.1.0",
+    "axe-playwright-python>=0.1.4",
+    "faker>=37.0.0",
+]
+
+[tool.pytest.ini_options]
+# Default to headless Chromium against the demo site; override on the CLI.
+addopts = "--browser chromium --base-url https://www.saucedemo.com --tracing retain-on-failure --screenshot only-on-failure --video retain-on-failure -ra"
+testpaths = ["tests"]
+markers = [
+    "e2e: end-to-end UI tests",
+    "api: API-level tests (no browser)",
+    "a11y: accessibility tests",
+    "smoke: critical-path smoke tests",
+    "visual: visual / structural regression tests",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
