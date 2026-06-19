@@ -1,5 +1,7 @@
 # Official Playwright Python image — browsers & OS deps preinstalled.
-FROM mcr.microsoft.com/playwright/python:v1.61.0-noble
+# Note: the Playwright Python package/image trails the JS release; 1.60 is the
+# latest Python tag (JS is at 1.61).
+FROM mcr.microsoft.com/playwright/python:v1.60.0-noble
 
 WORKDIR /app
 ENV CI=true
