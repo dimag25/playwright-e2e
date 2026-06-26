@@ -42,17 +42,17 @@
   "author": "dima.g",
   "license": "MIT",
   "devDependencies": {
-    "@axe-core/playwright": "^4.10.2",
-    "@eslint/js": "^9.39.0",
+    "@axe-core/playwright": "^4.12.1",
+    "@eslint/js": "^10.0.1",
     "@faker-js/faker": "^10.5.0",
     "@playwright/mcp": "^0.0.76",
-    "@playwright/test": "^1.61.0",
-    "@types/node": "^24.10.0",
+    "@playwright/test": "^1.61.1",
+    "@types/node": "^26.0.1",
     "dotenv": "^17.2.3",
-    "eslint": "^9.39.0",
+    "eslint": "^10.5.0",
     "eslint-plugin-playwright": "^2.2.2",
     "prettier": "^3.7.0",
-    "typescript": "^5.9.3",
-    "typescript-eslint": "^8.49.0"
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.62.0"
   }
 }
